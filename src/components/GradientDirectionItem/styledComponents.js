@@ -8,10 +8,12 @@ export const DirectionItem = styled.li`
 export const DirectionButton = styled.button`
   border-radius: 5px;
   padding: 10px;
-  background-color: #00c9b7;
+  background-color: ${props => (props.isActive ? '#ffffff' : '#00c9b7')};
   color: #334155;
   font-size: 15px;
   font-weight: 500px;
   border-width: 0;
   margin-right: 15px;
+  outline: none;
+  opacity: ${props => (props.isActive ? 1 : 0.5)};
 `
